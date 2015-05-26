@@ -22,7 +22,7 @@ path_array = splitPathApart(full_path);
 
 % Define the "illegal" patterns to look for at the start of a directory or
 % file name. (Add to these as needed.)
-illegal_patterns = {'.svn', '_svn', 'slprj'};
+illegal_patterns = {'.svn', '_svn', 'slprj', '.git'};
 illegal_patterns = prepadWithFileSep(illegal_patterns);
 
 % Remove the illegal patterns
